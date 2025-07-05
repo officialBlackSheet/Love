@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Love</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the website */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .header {
+            background-color: #e91e63; /* Deep pink header */
+            color: white;
+            padding: 1.5rem 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .message-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #4a4a4a;
+        }
+        .gallery-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default to 1 column */
+        }
+        @media (min-width: 640px) { /* Small screens (sm) */
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on small screens */
+            }
+        }
+        @media (min-width: 1024px) { /* Large screens (lg) */
+            .gallery-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on large screens */
+            }
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, cropping if necessary */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.03);
+        }
+        .footer {
+            background-color: #e91e63;
+            color: white;
+            padding: 1rem 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 3rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-extrabold text-center tracking-tight">
+                My Dearest Love,
+            </h1>
+        </div>
+    </header>
+
+    <!-- Love Message Section -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="message-card">
+            <h2 class="text-3xl font-bold text-pink-600 mb-4">A Message Just for You</h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                My love, every moment with you is a treasure. You bring so much joy, laughter, and warmth into my life.
+                These photos are just a small glimpse of the beautiful memories we've created and a promise of many more to come.
+                You are my sunshine, my strength, and my everything. I cherish you more than words can say.
+            </p>
+            <p class="text-xl font-semibold text-pink-700">
+                With all my love, always.
+            </p>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="mt-12">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-8">Our Beautiful Memories</h2>
+            <div class="gallery-grid">
+                <!-- Image 1 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-11 at 22.37.03_0a1777ec.jpg-44e30dc8-f574-446a-be2d-42137b5dbe43" alt="Beautiful memory 1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+1+Unavailable';">
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-13 at 20.43.43_c33b23ba.jpg-cfbee227-99f7-4792-a52f-eaf294a4e5d3" alt="Beautiful memory 2" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+2+Unavailable';">
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-14 at 13.56.48_cf838e9e.jpg-d42d80c0-9f08-430d-90a7-93c96a117db7" alt="Beautiful memory 3" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+3+Unavailable';">
+                </div>
+                <!-- Image 4 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-14 at 13.56.49_846b4a27.jpg-0dfa6e2d-ca7b-4e1d-9a40-2e0b7996ff00" alt="Beautiful memory 4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+4+Unavailable';">
+                </div>
+                <!-- Image 5 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-14 at 13.56.50_df673774.jpg-e4d75084-8e2c-41d6-9eca-69c988504c5c" alt="Beautiful memory 5" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+5+Unavailable';">
+                </div>
+                <!-- Image 6 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-14 at 13.56.51_bac886ce.jpg-aefdccae-f78d-4a31-ba2a-1c0cb33b61a7" alt="Beautiful memory 6" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+6+Unavailable';">
+                </div>
+                <!-- Image 7 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-16 at 17.29.05_67901961.jpg-df523122-ded5-4e6a-bd2f-9e2b538e5078" alt="Beautiful memory 7" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+7+Unavailable';">
+                </div>
+                <!-- Image 8 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-22 at 14.38.25_3c7a65ad.jpg-e60c3639-5a9f-4e96-bf26-6911f786e059" alt="Beautiful memory 8" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+8+Unavailable';">
+                </div>
+                <!-- Image 9 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-04-22 at 14.38.35_d5e97d30.jpg-55c354e9-712e-4dba-b8a8-0e53571221b6" alt="Beautiful memory 9" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+9+Unavailable';">
+                </div>
+                <!-- Image 10 -->
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/gemini-generated-images/images/uploaded:WhatsApp Image 2025-06-25 at 00.17.48_5706c523.jpg-67cd5b25-6724-4dad-a57c-c570252c97b9" alt="Beautiful memory 10" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC0CB/FFFFFF?text=Image+10+Unavailable';">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Created with Love. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
